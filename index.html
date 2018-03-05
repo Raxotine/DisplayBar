@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+
+	<h4 style="background-color:gray; color:white; padding:10px; width:97%; text-align:center;">{{data}}</h4>
+	<div ng-includes="" id="boxleft" style="background-color:lightgray; padding:4%; height:450px; width:41%; display:inline-block; text-align:center;">The quick brown fox jumped over the lazy dog and right into a ravenous wolf that turned out to be rather friendly but stunk to high heavens</div>
+	<div ng-includes="" id="boxright" style="background-color:lightgray; padding:4%; height:450px; width:41%; display:inline-block; text-align:center;">The quick brown fox jumped over the lazy dog and right into a ravenous wolf that turned out to be rather friendly but stunk to high heavens</div>
+
+	<script>
+	var app = angular.module('myApp', []);
+		app.controller('myCtrl', function($scope){
+			$scope.data = "The Skriptorium"
+		});
+	</script>	
+</body>
+
+
+</html>
